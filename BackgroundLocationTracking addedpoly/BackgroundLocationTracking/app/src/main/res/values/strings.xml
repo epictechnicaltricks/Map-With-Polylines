@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Techno</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+    <string name="google_maps_key">AIzaSyDeY-vv97cK3P4hszHgpPkokZFKdYtfKk0</string>
+    <string name="google_maps_key2_ohhpro">AIzaSyAMvMPhFmGKPkSwJf1hJK7S6e6MPvgDElA</string>
+</resources>

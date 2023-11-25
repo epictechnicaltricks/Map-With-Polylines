@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+style="@style/loginParent">
+
+
+
+        <LinearLayout
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:weightSum="12">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:background="@drawable/login_shape_bk"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageView
+                    style="@style/parent"
+                    android:background="@drawable/ic_login_bk"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_gravity="center"
+                android:text="Welcome to \nTechno"
+                android:layout_marginTop="40dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20sp"
+                app:cardBackgroundColor="#fff"
+                android:elevation="5dp"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="30sp">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_alternates_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="Login"
+                        android:layout_marginTop="20sp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/primaryTextColor"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp">
+
+                        <EditText
+                            android:fontFamily="@font/montserrat_alternates"
+
+                            android:id="@+id/editTextEmail"
+                            style="@style/modifiedEditText"
+                            android:hint="User ID"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                            android:autofillHints="emailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword"
+                        style="@style/parent"
+                        android:textColorHint="@color/primaryTextColor"
+app:passwordToggleEnabled="true"
+
+
+                        app:passwordToggleTint="@color/primaryTextColor"
+                        android:layout_marginTop="20sp">
+
+                        <EditText
+                            android:fontFamily="@font/montserrat_alternates"
+
+                            android:autofillHints="passwordr"
+                            android:id="@+id/editTextPassword"
+
+                            style="@style/modifiedEditText"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        style="@style/viewParent"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="13sp"
+                        android:layout_gravity="end"
+                        android:onClick="viewForgotPAssword"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:fontFamily="@font/montserrat_alternates_bold"
+
+                        android:id="@+id/cirLoginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_button_bk"
+                        android:onClick="login"
+                        android:text="Login" />
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
